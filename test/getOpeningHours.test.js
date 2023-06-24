@@ -1,6 +1,8 @@
 const getOpeningHours = require('../src/getOpeningHours');
 
 describe('getOpeningHours', () => {
+  const CLOSED_MESSAGE = 'The zoo is closed';
+
   it('deve retornar o objeto de horas quando nenhum argumento for fornecido', () => {
     const result = getOpeningHours();
     expect(result).toEqual({
@@ -16,7 +18,7 @@ describe('getOpeningHours', () => {
 
   it('deve retornar a string "The zoo is closed" quando o dia for Monday e o horário for 09:00-AM', () => {
     const result = getOpeningHours('Monday', '09:00-AM');
-    expect(result).toBe('The zoo is closed');
+    expect(result).toBe(CLOSED_MESSAGE);
   });
 
   it('deve retornar a string "The zoo is open" quando o dia for Tuesday e o horário for 09:00-AM', () => {
@@ -26,22 +28,7 @@ describe('getOpeningHours', () => {
 
   it('deve retornar a string "The zoo is closed" quando o dia for Wednesday e o horário for 09:00-PM', () => {
     const result = getOpeningHours('Wednesday', '09:00-PM');
-    expect(result).toBe('The zoo is closed');
-  });
-
-  it('deve retornar a string "The zoo is closed" quando o dia for Monday e o horário for 09:00-AM', () => {
-    const result = getOpeningHours('Monday', '09:00-AM');
-    expect(result).toBe('The zoo is closed');
-  });
-
-  it('deve retornar a string "The zoo is open" quando o dia for Tuesday e o horário for 09:00-AM', () => {
-    const result = getOpeningHours('Tuesday', '09:00-AM');
-    expect(result).toBe('The zoo is open');
-  });
-
-  it('deve retornar a string "The zoo is closed" quando o dia for Wednesday e o horário for 09:00-PM', () => {
-    const result = getOpeningHours('Wednesday', '09:00-PM');
-    expect(result).toBe('The zoo is closed');
+    expect(result).toBe(CLOSED_MESSAGE);
   });
 
   it('deve lançar uma exceção com a mensagem "The day must be valid. Example: Monday" quando o dia for inválido', () => {
