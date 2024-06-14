@@ -1,10 +1,21 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Zoo Functions
+
+## Descrição do Projeto
+
+Este projeto, desenvolvido como parte dos estudos do módulo de _Fundamentos_ da escola de tecnologia [Trybe](https://www.betrybe.com/), visa organizar e manipular informações sobre um zoológico. O foco é desenvolver funções que obtenham dados sobre os animais e os colaboradores do zoológico, aplicando conceitos de ES6, Higher Order Functions e desenvolvimento orientado a testes (TDD).
+
+## Objetivo
+
+O objetivo principal deste projeto é:
+
+-   Desenvolver funções para buscar e manipular informações sobre animais e colaboradores do zoológico.
+-   Escrever testes unitários para garantir o correto funcionamento das funções utilizando o módulo Jest do NodeJS.
+-   Utilizar uma abordagem de desenvolvimento orientado a testes (TDD) para assegurar a qualidade do código.
+
+## Tecnologias Utilizadas
+
+-   JavaScript (ES6)
+-   Node.js
+-   Jest
+
+----------
